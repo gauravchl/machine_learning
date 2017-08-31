@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 # linear model using variables
 import tensorflow as tf
 sess = tf.Session()

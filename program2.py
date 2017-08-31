@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 # constant nodes, and operations on it
 import tensorflow as tf
 sess = tf.Session()

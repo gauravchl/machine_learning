@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 # placeholder in tensorflow
 import tensorflow as tf
 sess = tf.Session()
