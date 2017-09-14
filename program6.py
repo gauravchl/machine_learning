@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 
-# Programm to use Optimizer
+# Optimizer
 
 import os
 import tensorflow as tf

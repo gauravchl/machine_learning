@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 
-# Programm to calculate cost function
+# Cost/Loss function
 
 import os
 import tensorflow as tf

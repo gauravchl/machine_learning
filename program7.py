@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 
-# Programm for tensorboard
+# Tensorboard
 # start tensorboard:
 # tensorboard --logdir=/tmp/tensorflow/ --port 6006
 
