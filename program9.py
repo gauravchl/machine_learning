@@ -46,7 +46,7 @@ print('Exporting...')
 
 export_path_base = 'models/'
 path = 'models/'
-version = '1.0.1'
+version = '1.0.2'
 
 FLAGS = tf.app.flags.FLAGS
 export_path = os.path.join( tf.compat.as_bytes(path), tf.compat.as_bytes(version))
@@ -55,7 +55,7 @@ print('Exporting trained model to', export_path)
 builder = tf.saved_model.builder.SavedModelBuilder(export_path)
 
 tensor_info_x = tf.saved_model.utils.build_tensor_info(x)
-tensor_info_y = tf.saved_model.utils.build_tensor_info(y)
+tensor_info_y = tf.saved_model.utils.build_tensor_info(linear_model)
 prediction_signature = (
   tf.saved_model.signature_def_utils.build_signature_def(
       inputs={'x': tensor_info_x},
