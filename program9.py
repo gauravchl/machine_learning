@@ -3,16 +3,9 @@
 # Save/Export model
 # https://www.tensorflow.org/serving/serving_basic
 
-# Feature columns - pass into estimator when initialize
-# Training data(x_train, y_train) - return from input fun
-# Input function (input_fun) - pass into estimator when training or evaluating estimator
-
-
 # Dont log all warnings
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-
-# Actual code starts here
 import tensorflow as tf
 import numpy as np
 
@@ -53,7 +46,7 @@ print('Exporting...')
 
 export_path_base = 'models/'
 path = 'models/'
-version = '1.0.0'
+version = '1.0.1'
 
 FLAGS = tf.app.flags.FLAGS
 export_path = os.path.join( tf.compat.as_bytes(path), tf.compat.as_bytes(version))
@@ -81,3 +74,5 @@ builder.add_meta_graph_and_variables(
     legacy_init_op=legacy_init_op)
 
 builder.save()
+
+print('Model exported')
